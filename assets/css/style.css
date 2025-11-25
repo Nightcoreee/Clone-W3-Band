@@ -22,7 +22,10 @@ html {
 #header {
     height: 46px;
     background-color: #000;    
+}
 
+#nav {
+    display: inline-block;
 }
 
 #nav > li {
@@ -67,8 +70,23 @@ html {
     position: absolute;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-
 }
+
+#header .search {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+    line-height: 46px;
+    font-size: 20px;
+}    
 
 #nav .subnav a {
     color: #000;
@@ -88,3 +106,6 @@ html {
 
 }
 
+.ti-arrow-circle-down {
+    font-size: 12px;
+}
