@@ -103,7 +103,29 @@ html {
 
 #slider {
     margin-top: 46px;
+    padding-top: 50%;
+    /* bg img/ bg position/ bg size / bg repeat */
+    background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
 }
+
+#slider .text-content {
+    position: absolute;
+    color: green;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;;
+}
+
+#slider .text-description {
+    margin-top: 24px;
+    font-size: 15px;
+}
+
 
 #content {
     
