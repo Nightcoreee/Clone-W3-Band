@@ -165,9 +165,13 @@ html {
 }
 
 #content .about-text {
-    text-align: justify!important;
+    text-align: justify;
     box-sizing: inherit;
     font-size: 15px;
     line-height: 1.5;
     margin: 15px 0;
+}
+
+#content .members-item {
+    float: left;
 }
