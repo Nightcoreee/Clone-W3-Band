@@ -15,6 +15,10 @@ html {
 4. Kiểu dáng 
 */
 
+.clear {
+    clear: both;
+}
+
 #main {
     
 }
@@ -172,6 +176,20 @@ html {
     margin: 15px 0;
 }
 
+#content .members-list {
+    margin-top: 48px;
+}
+
 #content .members-item {
     float: left;
+    width: 33.33333%;
+}
+
+#content .members-name {
+}
+
+#content .member-img {
+    margin-top:15px;
+    width: 154px;
+    border-radius: 4px;
 }
