@@ -220,5 +220,66 @@ html {
     margin-top: -3px;
 }
 
+/* Place */
+#content .places-list {
+    margin-top: 32px;
+    margin-left: -9px;
+    margin-right: -9px;
+    
+}
+
 #content .place-item {
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+    
+}
+
+#content .place-img:hover {
+    opacity: 0.6;
+}
+
+#content .place-img {
+    width: 100%;
+
+}
+
+#content .place-body {
+    background-color: #fff;
+    padding: 0.15px 16px;
+    font-size: 15px;
+    color: #000;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+#content .place-heading,
+#content .place-time,
+#content .place-desc {
+    margin: 15px 0px;
+}
+
+#content .place-heading {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#content .place-time {
+    color: #757575;
+}
+#content .place-desc {}
+
+#content .place-buy-ticket {
+    margin-bottom: 16px;
+    font-size: 15px;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+#content .place-buy-ticket:hover {
+    background-color: #ccc;
+    color: #000;
 }
