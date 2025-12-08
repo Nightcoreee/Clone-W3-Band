@@ -222,17 +222,17 @@ html {
 
 /* Place */
 #content .places-list {
-    margin-top: 32px;
+    /* margin-top: 32px;
     margin-left: -9px;
     margin-right: -9px;
-    
+    padding-bottom: 36px; */
+    margin: 32px -9px 44px -9px;
 }
 
 #content .place-item {
     float: left;
     width: 33.33333%;
     padding: 0 8px;
-    
 }
 
 #content .place-img:hover {
@@ -240,17 +240,17 @@ html {
 }
 
 #content .place-img {
+    display: block;
     width: 100%;
-
 }
 
 #content .place-body {
     background-color: #fff;
-    padding: 0.15px 16px;
-    font-size: 15px;
-    color: #000;
     line-height: 1.5;
     text-align: left;
+    font-size: 15px;
+    padding: 0.15px 16px;
+    color: #000;
 }
 
 
@@ -261,22 +261,21 @@ html {
 }
 
 #content .place-heading {
-    font-weight: 700;
+    font-weight: 700;   
     font-size: 15px;
 }
 
 #content .place-time {
     color: #757575;
 }
-#content .place-desc {}
 
 #content .place-buy-ticket {
+    background-color: #000;
     margin-bottom: 16px;
     font-size: 15px;
-    padding: 8px 16px;
-    background-color: #000;
-    color: #fff;
+    padding: 10px 16px;
     border: none;
+    color: #fff;
 }
 
 #content .place-buy-ticket:hover {
