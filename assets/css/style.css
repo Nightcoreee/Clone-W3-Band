@@ -278,7 +278,55 @@ html {
     color: #fff;
 }
 
-#content .place-buy-ticket:hover {
+#content .place-buy-ticket:hover,
+#content .btn-send:hover {
     background-color: #ccc;
     color: #000;
+}
+
+#content .contact-list {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    width: 100%;
+    margin: 0 -16px 8px -16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#content .contact-inform {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+#content .contact-form {
+    text-align: right;
+}
+
+#content .fa-map-marker, 
+#content .fa-phone, 
+#content .fa-envelope {
+    width: 30px;
+}
+
+#content .btn-send {
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 16px;
+    margin: 16px 0px;
+    border: none;
+}
+
+#content .box-name,
+#content .box-email,
+#content .box-message {
+    padding: 8px;
+}
+
+#content .box-message {
+    width: 100%;
 }
