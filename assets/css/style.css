@@ -287,12 +287,10 @@ html {
 #content .contact-list {
     padding-top: 32px;
     padding-bottom: 32px;
-    display: block;
     width: 100%;
-    margin: 0 -16px 8px -16px;
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 167px;
 }
 
 #content .contact-inform {
@@ -302,9 +300,7 @@ html {
     line-height: 1.5;
 }
 
-#content .contact-form {
-    text-align: right;
-}
+
 
 #content .fa-map-marker, 
 #content .fa-phone, 
@@ -316,7 +312,7 @@ html {
     background-color: #000;
     color: #fff;
     font-size: 15px;
-    padding: 8px 16px;
+    padding: 12px 16px;
     margin: 16px 0px;
     border: none;
 }
@@ -324,9 +320,12 @@ html {
 #content .box-name,
 #content .box-email,
 #content .box-message {
-    padding: 8px;
+    padding: 12px;
+    border: 1px solid #ccc;
 }
 
 #content .box-message {
     width: 100%;
+    margin-top: 8px;
 }
+
