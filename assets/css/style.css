@@ -348,6 +348,7 @@ html {
     width: 900px;
     min-height: 200px;
     position: relative;
+    max-width: calc(100%-32px);
 }
 
 .modal-header {
@@ -374,8 +375,9 @@ html {
     cursor: pointer;
 }
 
-.ti-close:hover,
-#buy-ticket:hover {
+#buy-ticket:hover, 
+.close-modal:hover,
+.ti-close:hover {
     background-color: #ccc;
     color: #000;
 }
@@ -383,7 +385,7 @@ html {
 .modal-lable {
     display: block;
     font-size: 15px;
-    margin: 15px 0px;
+    margin: 8px 0px;
 }
 
 .modal-body {
@@ -396,15 +398,36 @@ html {
     width: 100%;
     border: 1px solid #ccc;
     font-size: 20px;
+    margin-bottom: 24px;
 }
 
 #buy-ticket {
     padding: 16px;
-    margin: 16px 0px;  
+    margin: 4px 0px;  
     width: 100%;
     color: #fff;
     background-color: #009688;
     border: none;
+    cursor: pointer;
+}
+
+.need-modal {
+    float: right;
+    margin: 15px 16px;
+}
+
+.need-modal a {
+    color: #2196F3;
+}
+
+.close-modal {
+    margin: 12px 16px;
+    font-size: 15px;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    color: #fff;
+    background-color: #f44336;
+    cursor: pointer;
 }
 
 
