@@ -24,7 +24,7 @@
                     <li><a href="">Contact</a></li>
                     <li>
                         <a href="#">More
-                            <i class="ti-arrow-circle-down"></i>
+                            <i class="fa fa-caret-down"></i>
                         </a>
                         <ul class="subnav">
                             <li><a href="">Merchandise</a></li>
@@ -38,7 +38,7 @@
         
             <!-- Begin: Search -->
             <div class="search">
-                <i class="search-icon ti-search"></i>
+                <i class="fa fa-search"></i>
 
             </div>
             <!-- End: Search -->
@@ -138,19 +138,14 @@
                 <div class="contact-list">
 
                     <div class="contact-inform">
-                        <p>
-                            <i class="address-icon fa fa-map-marker"></i>
-                            Chicago, US
+                        <i class="address-icon fa fa-map-marker"></i>
+                        Chicago, US<br>
                         
-                        <p>
-                            <i class="phone-icon fa fa-phone"></i>
-                            Phone: +00 151515 
-                        </p>
-
-                        <p>
-                            <i class="email-icon fa fa-envelope"></i>
-                            Email: mail@mail.com
-                        </p>
+                        <i class="phone-icon fa fa-phone"></i>
+                        Phone: +00 151515<br>
+                            
+                        <i class="email-icon fa fa-envelope"></i>
+                        Email: mail@mail.com
                     </div>
 
                     <div div class="contact-form">
@@ -175,6 +170,49 @@
 
         </div>
 
+    </div>
+
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-close">
+                <i class="ti-close"></i>
+            </div>
+
+            <header class="modal-header">
+                <i class="fa fa-suitcase"></i>
+                Tickets
+            </header>
+
+            <div class="modal-body">
+                <label for="" class="modal-lable">
+                    <i class="fa fa-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" class="modal-input" placeholder="How many?">
+
+                <label for="" class="modal-lable">
+                    <i class="fa fa-user"></i>
+                    Send To
+                </label>
+
+                <input type="email" class="modal-input" placeholder="Enter email">
+
+                <button id="buy-ticket">
+                    PAY<i class="fa fa-check"></i>
+                </button>
+            </div>
+
+            <footer class="modal-footer">
+                <button class="close-modal">
+                    Close
+                    <i class="fa fa-move"></i>
+                </button>
+
+                <p class="need-modal">
+                    Need<a href="#" class="help-modal">help?</a>
+                </p>
+            </footer>
+        </div>
     </div>
 </body>
 </html>
