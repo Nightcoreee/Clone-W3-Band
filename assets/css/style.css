@@ -15,6 +15,7 @@ html {
 4. Kiểu dáng 
 */
 
+/* Common */
 .text-white {
     color: #fff !important;
 }
@@ -23,6 +24,26 @@ html {
     clear: both;
 }
 
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+/* Main */
 #main {
     
 }
@@ -176,11 +197,6 @@ html {
     margin-top: 48px;
 }
 
-#content .members-item {
-    float: left;
-    width: 33.33333%;
-}
-
 #content .member-img {
     margin-top:15px;
     width: 154px;
@@ -220,20 +236,12 @@ html {
     margin-top: -3px;
 }
 
-/* Place */
+/* Places */
 #content .places-list {
-    /* margin-top: 32px;
-    margin-left: -9px;
-    margin-right: -9px;
-    padding-bottom: 36px; */
-    margin: 32px -9px 44px -9px;
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 
-#content .place-item {
-    float: left;
-    width: 33.33333%;
-    padding: 0 8px;
-}
 
 #content .place-img:hover {
     opacity: 0.6;
