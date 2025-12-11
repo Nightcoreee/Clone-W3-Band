@@ -103,7 +103,7 @@
                                 <h2 class="place-heading">New York</h2>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-ticket">Buy Tickets</button>
+                                <button class="place-buy-ticket js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
     
@@ -113,7 +113,7 @@
                                 <h2 class="place-heading">Paris</h2>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-ticket">Buy Tickets</button>
+                                <button class="place-buy-ticket js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         
@@ -123,7 +123,7 @@
                                 <h2 class="place-heading">San Francisco</h2>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-ticket">Buy Tickets</button>
+                                <button class="place-buy-ticket js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -142,10 +142,10 @@
                         Chicago, US<br>
                         
                         <i class="phone-icon fa fa-phone"></i>
-                        Phone: +00 151515<br>
+                        Phone: <a href="" class="phone">+00 151515</a><br>
                             
                         <i class="email-icon fa fa-envelope"></i>
-                        Email: mail@mail.com
+                        Email: <a href="" class="email">mail@mail.com</a>
                     </div>
 
                     <div div class="contact-form">
@@ -172,9 +172,9 @@
 
     </div>
 
-    <div class="modal">
-        <div class="modal-container">
-            <div class="modal-close">
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
                 <i class="ti-close"></i>
             </div>
 
@@ -203,7 +203,7 @@
             </div>
 
             <footer class="modal-footer">
-                <button class="close-modal">
+                <button class="close-modal js-btn-close">
                     Close
                     <i class="fa fa-remove"></i>
                 </button>
@@ -214,5 +214,34 @@
             </footer>
         </div>
     </div>
+
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.js-modal')
+        const closeModal = document.querySelector('.js-modal-close')
+        const btnClose = document.querySelector('.js-btn-close')
+        const modalContainer = document.querySelector('.js-modal-container')
+
+        function showBuyTickets() {
+            modal.classList.add('open')
+        }
+
+        function closeBuyTickets() {
+            modal.classList.remove('open')
+        }
+
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBuyTickets)
+        }
+
+        btnClose.addEventListener('click', closeBuyTickets)
+        closeModal.addEventListener('click', closeBuyTickets)
+
+        modal.addEventListener('click', closeBuyTickets)
+
+        modalContainer.addEventListener('click',  (e) => {
+            e.stopPropagation()
+        })
+    </script>
 </body>
 </html>
