@@ -20,6 +20,10 @@ html {
     color: #fff !important;
 }
 
+.mt8 {
+    margin-top: 8px !important;
+}
+
 .clear {
     clear: both;
 }
@@ -27,6 +31,12 @@ html {
 .row {
     margin-left: -8px;
     margin-right: -8px;
+}
+
+.row::after {
+    content:"";
+    display: block;
+    clear: both;
 }
 
 .col {
@@ -46,6 +56,7 @@ html {
 .col-third {
     width: 33.33333%;
 }
+
 
 /* Main */
 #main {
@@ -308,9 +319,7 @@ html {
     line-height: 1.5;
 }
 
-#content .address-icon,
-#content .phone-icon,
-#content .email-icon {
+#content .contact-infor i[class*="fa-"] {
     width: 30px;
 }
 
@@ -320,16 +329,24 @@ html {
 
 
 #content .contact-form {
-    font-size: 15px;
+    font-size: 15px; 
 }
+
+.contact-form .form-control {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+}
+
 
 #content .btn-send {
     color: #fff;
     background-color: #000;
     border: none;
-    padding: 8px 16px;
+    padding: 10px 16px;
     margin: 16px 0px;
     float: right;
+    font-size: 15px;
 }
 
 /* Modal */
