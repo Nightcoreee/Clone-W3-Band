@@ -302,48 +302,35 @@ html {
     margin-top: 48px;
 }
 
-#content .contact-inform {
+#content .contact-infor {
+    text-align: left;
     font-size: 18px;
-    margin-bottom: 16px;
     line-height: 1.5;
 }
 
-#content .contact-inform a {
-    color: #2196F3;
-}
-
-#content .fa-map-marker, 
-#content .fa-phone, 
-#content .fa-envelope {
+#content .address-icon,
+#content .phone-icon,
+#content .email-icon {
     width: 30px;
 }
 
-/* Contact Form */
+#content .contact-infor a {
+    color: #2196F3;
+}
+
+
 #content .contact-form {
     font-size: 15px;
 }
 
-#content .box-name,
-#content .box-email,
-#content .box-message {
-    padding: 12px;
-    border: 1px solid #ccc;
-}
-
-#content .box-message {
-    width: 100%;
-    margin-top: 8px;
-}
-
 #content .btn-send {
-    background-color: #000;
-    padding: 12px 16px;
-    margin: 16px 0px;
-    border: none;
     color: #fff;
-    cursor: pointer;
+    background-color: #000;
+    border: none;
+    padding: 8px 16px;
+    margin: 16px 0px;
+    float: right;
 }
-
 
 /* Modal */
 .modal {
