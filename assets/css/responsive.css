@@ -1,0 +1,25 @@
+@media (min-width: 1024px) {
+    #header .btn-menu {
+        display: none;
+    }
+}
+
+
+@media (min-width: 740px) and (max-width: 1023px){
+    
+}
+
+
+@media (max-width: 740px) {
+    #nav li {
+        display: block;
+    }   
+
+    #header .btn-search {
+        display: none;
+    }
+
+    #header .btn-menu {
+        display: block;
+    }
+}
