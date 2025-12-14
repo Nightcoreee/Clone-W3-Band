@@ -6,6 +6,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 /*
@@ -22,6 +23,24 @@ html {
 
 .mt8 {
     margin-top: 8px !important;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.pd-16 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.pd-64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.medium {
+    font-size: 15px !important;
 }
 
 .clear {
@@ -181,7 +200,7 @@ html {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    padding: 60px 20px;
+    padding: 60px 0px 112px;
     width: 800px;
 }
 
@@ -254,7 +273,7 @@ html {
 /* Places */
 #content .places-list {
     margin-top: 32px;
-    margin-bottom: 48px;
+    
 }
 
 
@@ -347,6 +366,7 @@ html {
     margin: 16px 0px;
     float: right;
     font-size: 15px;
+    cursor: pointer;
 }
 
 /* Modal */
@@ -463,4 +483,29 @@ html {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.img-map {
+    max-width: 100%;
+    filter: grayscale(50%);
+    display: block;
+    width: 100%;
+}
+
+.social-list {
+    font-size: 24px;
+}
+
+.icon-social {
+    color: #757575;  
+}
+
+.icon-social:hover {
+    opacity: 0.6;
+}
+
+#footer p,
+#footer a {
+    color: #757575;
+    padding-top: 24px;
 }
