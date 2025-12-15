@@ -6,7 +6,9 @@
 
 
 @media (min-width: 740px) and (max-width: 1023px){
-    
+    #header .btn-menu {
+        display: none;
+    }
 }
 
 
@@ -15,6 +17,14 @@
         display: block;
     }   
 
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav {
+        display: block;
+    }
+
     #header .btn-search {
         display: none;
     }
@@ -22,4 +32,6 @@
     #header .btn-menu {
         display: block;
     }
+
+
 }
