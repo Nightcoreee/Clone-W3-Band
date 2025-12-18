@@ -13,6 +13,10 @@
 
 /* Mobile */
 @media (max-width: 740px) {
+    .mbt-16 {
+        margin-bottom: 16px;
+    }
+
     .member-items {
         margin-top: 30px;
         width: 100%;
@@ -20,6 +24,11 @@
 
     .tour-items {
         margin-top: 15px;
+        width: 100%;
+    }
+
+    .contact-items {
+        margin-top: 0px;
         width: 100%;
     }
 
