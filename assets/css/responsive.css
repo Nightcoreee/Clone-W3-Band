@@ -11,20 +11,21 @@
     }
 }
 
-
+/* Mobile */
 @media (max-width: 740px) {
-    #nav li {
-        display: block;
-    }   
-
-    #nav > li:first-child {
-        display: inline-block;
+    .member-items {
+        margin-top: 30px;
+        width: 100%;
     }
 
-    #nav {
-        display: block;
+    .tour-items {
+        margin-top: 15px;
+        width: 100%;
     }
 
+    #header {
+        overflow: hidden;
+    }
     #header .btn-search {
         display: none;
     }
@@ -33,5 +34,23 @@
         display: block;
     }
 
+    #nav li {
+        display: block;
+    }   
 
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav .subnav {
+        position: initial;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
 }

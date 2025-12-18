@@ -69,17 +69,17 @@
                 </p>
 
                 <div class="members-list">
-                    <div class="col col-third">
+                    <div class="member-items col col-third">
                         <p class="members-name">Name</p>
                         <img src="assets/img/band/member1.jpg" alt="" class="member-img">
                     </div>
 
-                    <div class="col col-third">
+                    <div class="member-items col col-third">
                         <p class="members-name">Name</p>
                         <img src="assets/img/band/member1.jpg" alt="" class="member-img">
                     </div>
 
-                    <div class="col col-third">
+                    <div class="member-items col col-third">
                         <p class="members-name">Name</p>
                         <img src="assets/img/band/member1.jpg" alt="" class="member-img">
                     </div>
@@ -100,7 +100,7 @@
                     </ul>     
 
                     <div class="row places-list">
-                        <div class="col col-third">
+                        <div class="tour-items col col-third">
                             <img src="assets/img/tour/new_york.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h2 class="place-heading">New York</h2>
@@ -110,7 +110,7 @@
                             </div>
                         </div>
     
-                        <div class="col col-third">
+                        <div class="tour-items col col-third">
                             <img src="assets/img/tour/paris.jpg" alt="Paris" class="place-img">
                             <div class="place-body">
                                 <h2 class="place-heading">Paris</h2>
@@ -120,7 +120,7 @@
                             </div>
                         </div>
                         
-                        <div class="col col-third">
+                        <div class="tour-items col col-third">
                             <img src="assets/img/tour/sanfran.jpg" alt="San Francisco" class="place-img">
                             <div class="place-body">
                                 <h2 class="place-heading">San Francisco</h2>
@@ -285,10 +285,16 @@
         menuItems = document.querySelectorAll('#nav li a[href*="#"]');
         for (var i=0; i < menuItems.length; i++) {
             var menuItem = menuItems[i];
-                menuItem.onclick = () => {
-                    header.style.position = 'fixed';
+            
+            menuItem.onclick = (e) => {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList('subnav');
+                if(isParentMenu) {
+                    e.preventDefault();
+                }
+                else {
                     header.style.height = null;
                 }
+            }
         }
     </script>
 </body>
