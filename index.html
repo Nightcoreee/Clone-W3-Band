@@ -17,7 +17,7 @@
         <div id="header">
 
             <!-- Begin: Nav -->
-            <div id="nav">
+            <div id="nav" class="js-menu-nav">
                 <!-- ul#nav>li*5>a -->
                 <ul id="nav">
                     <li><a href="#">Home</a></li>
@@ -69,17 +69,17 @@
                 </p>
 
                 <div class="members-list">
-                    <div class="member-items col col-third">
+                    <div class="mt30 s-col-full col col-third">
                         <p class="members-name">Name</p>
                         <img src="assets/img/band/member1.jpg" alt="" class="member-img">
                     </div>
 
-                    <div class="member-items col col-third">
+                    <div class="mt30 s-col-full col col-third">
                         <p class="members-name">Name</p>
                         <img src="assets/img/band/member1.jpg" alt="" class="member-img">
                     </div>
 
-                    <div class="member-items col col-third">
+                    <div class="mt30 s-col-full col col-third">
                         <p class="members-name">Name</p>
                         <img src="assets/img/band/member1.jpg" alt="" class="member-img">
                     </div>
@@ -100,33 +100,33 @@
                     </ul>     
 
                     <div class="row places-list">
-                        <div class="tour-items col col-third">
+                        <div class="mt15 s-col-full col col-third">
                             <img src="assets/img/tour/new_york.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h2 class="place-heading">New York</h2>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-ticket js-buy-ticket">Buy Tickets</button>
+                                <button class="s-full-width center place-buy-ticket js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
     
-                        <div class="tour-items col col-third">
+                        <div class="mt15 s-col-full col col-third">
                             <img src="assets/img/tour/paris.jpg" alt="Paris" class="place-img">
                             <div class="place-body">
                                 <h2 class="place-heading">Paris</h2>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-ticket js-buy-ticket">Buy Tickets</button>
+                                <button class="s-full-width center place-buy-ticket js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         
-                        <div class="tour-items col col-third">
+                        <div class="mt15 s-col-full col col-third">
                             <img src="assets/img/tour/sanfran.jpg" alt="San Francisco" class="place-img">
                             <div class="place-body">
                                 <h2 class="place-heading">San Francisco</h2>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-ticket js-buy-ticket">Buy Tickets</button>
+                                <button class="s-full-width center place-buy-ticket js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -140,7 +140,7 @@
                 <p class="section-sub-heading">Fan? Drop a note!</p>
                 
                 <div class="row contact-content">
-                    <div class="contact-items mbt-16 col col-half contact-infor">
+                    <div class="mt4 s-col-full mbt-16 col col-half contact-infor">
                         <p><i class="address-icon fa fa-map-marker"></i>Chicago, US</p>
                         
                         <p><i class="phone-icon fa fa-phone"></i>Phone:<a href="" class="phone"> +00 151515</a></p>
@@ -148,14 +148,14 @@
                         <p><i class="email-icon fa fa-envelope"></i>Email:<a href="" class="email"> mail@mail.com</a></p>
                     </div>
 
-                    <div div class="contact-items col col-half contact-form">
+                    <div div class="mt4 s-col-full col col-half contact-form">
                         <form action="">
                             <div class="row">
-                                <div class="contact-items col col-half name">
+                                <div class="mt4 s-col-full col col-half name">
                                     <input class="form-control" type="text" placeholder="Name" required> 
                                 </div>
 
-                                <div class="contact-items col col-half email">
+                                <div class="mt4 s-col-full col col-half email">
                                     <input class="form-control" type="text" placeholder="Email" required> 
                                 </div>
                             </div>
@@ -165,7 +165,7 @@
                                     <input class="form-control" type="text" placeholder="Message" required>                   
                                 </div>
                             </div>
-                            <button class="btn-send" type="submit">SEND</button>
+                            <button class="s-full-width btn-send" type="submit">SEND</button>
                         </form>
                     </div>
                 </div>
@@ -196,11 +196,11 @@
     <div class="modal js-modal">
         <div class="modal-container js-modal-container">
             <div class="modal-close js-modal-close">
-                <i class="ti-close"></i>
+                <i class="btn-close ti-close"></i>
             </div>
 
             <header class="modal-header">
-                <i class="fa fa-suitcase"></i>
+                <i class="icon-ticket fa fa-suitcase"></i>
                 Tickets
             </header>
 
@@ -266,9 +266,10 @@
     </script>
 
     <script>
-        var header = document.getElementById('header');
-        var mobileMenu = document.getElementById('mobile-menu');
-        var headerHeight = header.clientHeight;
+        const header = document.getElementById('header');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const headerHeight = header.clientHeight;
+        const menuNav = document.querySelector('.js-menu-nav'); 
 
         //Đóng mở menu
         mobileMenu.onclick = () => {
@@ -296,6 +297,10 @@
                 }
             }
         }
+
+        menuNav.addEventListener('click', (e) => {
+            e.stopPropagation();
+        })
     </script>
 </body>
 </html>

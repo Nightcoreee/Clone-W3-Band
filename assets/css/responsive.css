@@ -13,22 +13,29 @@
 
 /* Mobile */
 @media (max-width: 740px) {
-    .mbt-16 {
-        margin-bottom: 16px;
+    .s-full-width,
+    .s-col-full {
+        width: 100% !important;
     }
 
-    .member-items {
-        margin-top: 30px;
-        width: 100%;
+    .center {
+        text-align: center !important;
+    }
+    
+    .mt4 {
+        margin-top: 4px !important;
     }
 
-    .tour-items {
-        margin-top: 15px;
-        width: 100%;
+    .mt15 {
+        margin-top: 15px !important;
+    }
+
+    .mt30 {
+        margin-top: 30px !important;
     }
 
     .contact-items {
-        margin-top: 0px;
+        margin-top: 4px;
         width: 100%;
     }
 
@@ -62,4 +69,5 @@
     #content .member-img {
         width: 60%;
     }
+
 }

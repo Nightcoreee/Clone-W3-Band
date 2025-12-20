@@ -21,8 +21,20 @@ html {
     color: #fff !important;
 }
 
+.mbt-16 {
+    margin-bottom: 16px !important;
+}
+
+.mt4 {
+    margin-top: 4px !important;
+}
+
 .mt8 {
     margin-top: 8px !important;
+}
+
+.mt15 {
+    margin-top: 15px !important;
 }
 
 .center {
@@ -404,7 +416,7 @@ html {
     width: 900px;
     min-height: 200px;
     position: relative;
-    max-width: calc(100%-32px);
+    max-width: calc(100% - 32px);
     animation: modalFaceIn ease .5s;
 }
 
@@ -418,11 +430,11 @@ html {
     color: #fff;
 }
 
-.fa-suitcase {
+.icon-ticket {
     margin-right: 16px;
 }
 
-.ti-close {
+.btn-close {
     position: absolute;
     right: 0;
     top: 0;
@@ -525,8 +537,4 @@ html {
 #footer a {
     color: #757575;
     padding-top: 24px;
-}
-
-@media tablet {
-    
 }
