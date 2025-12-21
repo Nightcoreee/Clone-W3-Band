@@ -156,7 +156,7 @@
                                 </div>
 
                                 <div class="mt4 s-col-full col col-half email">
-                                    <input class="form-control" type="text" placeholder="Email" required> 
+                                    <input class="form-control" type="email" placeholder="Email" required> 
                                 </div>
                             </div>
 
@@ -205,22 +205,24 @@
             </header>
 
             <div class="modal-body">
-                <label for="quantity" class="modal-lable">
-                    <i class="fa fa-shopping-cart"></i>
-                    Tickets, $15 per person
-                </label>
-                <input id="quantity" type="text" class="modal-input" placeholder="How many?">
+                <form action="">
+                    <label for="quantity" class="modal-lable">
+                        <i class="fa fa-shopping-cart"></i>
+                        Tickets, $15 per person
+                    </label>
+                    <input id="quantity" type="text" class="modal-input" required placeholder="How many?">
 
-                <label for="email" class="modal-lable">
-                    <i class="fa fa-user"></i>
-                    Send To
-                </label>
+                    <label for="email" class="modal-lable">
+                        <i class="fa fa-user"></i>
+                        Send To
+                    </label>
 
-                <input id="email" type="email" class="modal-input" placeholder="Enter email">
+                    <input id="email" type="email" class="modal-input" required placeholder="Enter email">
 
-                <button id="buy-ticket">
-                    PAY<i class="fa fa-check"></i>
-                </button>
+                    <button id="buy-ticket" type="submit">
+                        PAY<i class="fa fa-check"></i>
+                    </button>
+                </form>
             </div>
 
             <footer class="modal-footer">
