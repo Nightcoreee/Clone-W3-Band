@@ -538,3 +538,7 @@ html {
     color: #757575;
     padding-top: 24px;
 }
+
+#footer a {
+    color: #2196F3;
+}

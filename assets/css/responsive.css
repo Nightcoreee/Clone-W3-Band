@@ -1,3 +1,4 @@
+/* PC */
 @media (min-width: 1024px) {
     #header .btn-menu {
         display: none;
@@ -5,10 +6,28 @@
 }
 
 
+@media (max-width: 1023px) {
+    .social-list {
+        font-size: 36px;
+    }
+
+    #footer p,
+    #footer a {
+        padding: 24px 8px;
+        font-size: 20px;
+    }
+
+}
+
+/* Tablet*/
 @media (min-width: 740px) and (max-width: 1023px){
     #header .btn-menu {
         display: none;
     }
+
+    #content .contact-infor {
+        line-height: 2;
+    }   
 }
 
 /* Mobile */
