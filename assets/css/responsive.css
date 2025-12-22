@@ -1,12 +1,19 @@
+/*
+PC: >= 1024px
+Tablet: 740px - 1023px
+Mobile: <= 739px
+*/
+
+
 /* PC */
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
     #header .btn-menu {
         display: none;
     }
 }
 
-
-@media (max-width: 1023px) {
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {
     .social-list {
         font-size: 36px;
     }
@@ -20,7 +27,7 @@
 }
 
 /* Tablet*/
-@media (min-width: 740px) and (max-width: 1023px){
+@media (min-width: 46.25em) and (max-width: 63.9375em){
     #header .btn-menu {
         display: none;
     }
@@ -31,7 +38,7 @@
 }
 
 /* Mobile */
-@media (max-width: 740px) {
+@media (max-width: 46.1875em) {
     .s-full-width,
     .s-col-full {
         width: 100% !important;

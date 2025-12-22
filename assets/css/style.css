@@ -216,6 +216,7 @@ html {
 #slider .text-description {
     margin-top: 24px;
     font-size: 15px;
+    text-shadow: 0 0 1px #000;
 }
 
 
